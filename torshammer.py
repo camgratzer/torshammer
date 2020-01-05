@@ -93,7 +93,7 @@ class httpPost(Thread):
                 except Exception, e:
                     if e.args[0] == 106 or e.args[0] == 60:
                         break
-                    print term.BOL+term.UP+term.CLEAR_EOL+"Error connecting to host..."+ term.NORMAL
+                    print term(BOL+term.UP+term.CLEAR_EOL+"Error connecting to host..."+ term.NORMAL)
                     time.sleep(1)
                     continue
 	
